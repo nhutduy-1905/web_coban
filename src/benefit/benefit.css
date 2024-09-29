@@ -1,0 +1,45 @@
+.benefitContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefitItem {
+    width: 180px;
+    border: 1px solid #27ae60;
+    box-shadow: 1px 1px #888888;
+
+    /* center div */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* padding */
+    padding: 20px;
+}
+
+.freeShiping{
+margin-top: 15px;
+background: #ff7979;
+color: #27ae60;
+padding: 10px;
+}
+
+/* .benefitContainer .Product1:hover .Product2:hover .Product3:hover .Product4:hover.Product5:hover.Product6:hover {
+    box-shadow: 10px 10px 20px rgba(70, 62, 221, 0.1);
+}
+
+.benefitContainer .Product1 .Product2 .Product3.Product4 .Product5 .Product6 h6 img {
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+.benefitContainer .Product1 .Product2 .Product3 .Product4 .Peoduct5 .Product6 h6 {
+    display: inline-block;
+    line-height: 1;
+    padding: 9px 8px 7px 6px;
+    border-radius: 4px;
+    color: #08534f;
+    background-color: #1ee00c;
+} */
