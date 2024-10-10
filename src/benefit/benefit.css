@@ -2,29 +2,69 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-right: -30px;
+    margin-left: -30px;
+   
 }
-
 .benefitItem {
-    width: 180px;
+    width: 130px;
     border: 1px solid #27ae60;
     box-shadow: 1px 1px #888888;
-
     /* center div */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:column;
+    justify-content:space-between;
     align-items: center;
-
     /* padding */
-    padding: 20px;
+    padding-right:  10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.freeShiping {
+    margin-top: 15px;
+    background:#FFCCCC;
+    color: #27ae60;
+    padding: 8px;
 }
 
-.freeShiping{
-margin-top: 15px;
-background: #ff7979;
-color: #27ae60;
-padding: 10px;
+.Onlineoder {
+    margin-top: 15px;
+    background:#99FF99;
+    color: #27ae60;
+    padding: 8px;
 }
+
+.Savemoney {
+    margin-top: 15px;
+    background:#98F5FF;
+    color: #27ae60;
+    padding: 5px;
+}
+
+
+.Prommotions {
+    margin-top: 15px;
+    background:#FFBBFF;
+    color: #27ae60;
+    padding: 5px;
+}
+
+.Happysell {
+    margin-top: 15px;
+    background: rgb(243, 183, 215);
+    color: #27ae60;
+    padding: 5px;
+}
+
+.support{
+    margin-top: 15px;
+    background:#FFDAB9;
+    color: #27ae60;
+    padding: 10px;
+}
+
+
 
 /* .benefitContainer .Product1:hover .Product2:hover .Product3:hover .Product4:hover.Product5:hover.Product6:hover {
     box-shadow: 10px 10px 20px rgba(70, 62, 221, 0.1);

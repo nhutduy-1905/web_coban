@@ -1,82 +1,124 @@
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #456b52;
+    margin: 15px 0  20px ;
+    margin-top: 0px;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
 body {
-    background-image: url("file:///C:/Users/ACER/Documents/Zalo%20Received%20Files/images/images/hero4.png");
-    background-repeat: repeat;
-    height: 100%;
-    width: 90%;
-    text-align: center;
+    width: 100%;
 }
 
-.Header {
+#header {
     display: flex;
-    justify-content: space-between;
-}
-
-.Logo {
-    width: 140px;
-    height: 50px;
-    display: flex;
-    justify-content: center
-}
-
-.Menu {
-    height: 40px;
-    display: flex;
-    /*dùng làm cho chữ nằm ngang */
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
-.Menu-item {
-    cursor: pointer;
-    padding: 10px;
-}
-
-.banner {
-    height: 400px;
+#nvbar {
     display: flex;
-    vertical-align: bottom;
-    justify-content: flex-start;
-    font-weight: bolder;
-    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
 }
 
-.task-1 {
-    text-align: center;
-    color: rgb(185, 185, 188);
-    font-size: xxx-large;
-    margin-top: 50px
+#nvbar div {
+    list-style: none;
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
-.task-2 {
-    text-align: center;
-    color: black;
-    font-size: 200%;
-    line-height: 2em;
+#nvbar div:hover {
+    color: #088178;
 }
 
-.task-3 {
-    text-align: center;
-    color: greenyellow;
-    font-size: 200%;
+#nvbar .active {
+    color: #088178;
 }
 
-.task-4 {
-    text-align: center;
-    color: rgb(57, 164, 19);
-    font-size: smaller;
-    vertical-align: bottom;
+#nvbar .div .active::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
 
-.task-5 {
-    text-align: center;
-    color: rgb(119, 223, 54);
-    font-size: small;
-    background-image: url("file:///C:/Users/ACER/AppData/Local/Temp/203fd7c7-94e5-4a43-aaa2-736a6c35a6dc_images.zip.6dc/images/button.png");
+#hero {
+    background-image: url("../../images/hero4.png");
+    height: 90vh;
+    width: 100%;
     background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    padding: 5px;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+ 
 }
 
 
-/* id là dấu thăng và class là dấu . */
+#hero h1 {
+    color: #088178;
+    margin-top:-7px;
+    font-size: 47px;
+}
+
+#hero button {
+    background-image: url("../../images/button.png");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}

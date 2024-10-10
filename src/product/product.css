@@ -1,55 +1,181 @@
-.product{
-  width: 100%;
+.product {
+    width: 100%;
+    /* Đảm bảo phần tử .product chiếm toàn bộ chiều rộng của container cha */
+    margin-bottom: 40px;
 }
 
-.productTitle{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.productTitle {
+    display: flex;
+    /* Kích hoạt chế độ flexbox để sắp xếp các phần tử con */
+    flex-direction: column;
+    /* Sắp xếp các phần tử con theo cột (trục dọc) */
+    justify-content: center;
+    /* Căn giữa các phần tử con theo trục chính (chiều dọc) */
+    align-items: center;
+    /* Căn giữa các phần tử con theo trục phụ (chiều ngang) */
 }
 
-.productContainer{
-  width: 100%;
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-around;
+.productContainer {
+    width: 100%;
+    /* Đảm bảo phần tử .productContainer chiếm toàn bộ chiều rộng của khung chứa */
+    margin-top: 25px;
+    /* Tạo khoảng cách phía trên phần tử 25px */
+    display: flex;
+    /* Sử dụng flexbox để sắp xếp các sản phẩm bên trong */
+    justify-content: space-around;
+    /* Phân bố không gian đều giữa các sản phẩm */
 }
 
-.productItem{
-  width: 200px;
-  height: 300px;
-  /* background: #f0932b; */
-  margin: 15px;
-  border: 1px solid #535c68;
-  border-radius: 10px;
-
-  /* vùng cho cái khung */
-  position: relative;
+.productItem {
+    width: 210px;
+    /* Chiều rộng cố định của mỗi sản phẩm là 210px */
+    height: 300px;
+    /* Chiều cao cố định của mỗi sản phẩm là 300px */
+    /* background: #f0932b; */
+    /* Màu nền cho sản phẩm (đã bị tắt) */
+    margin: 15px;
+    /* Khoảng cách giữa các sản phẩm là 15px */
+    border: 1px solid #535c68;
+    /* Đường viền xung quanh sản phẩm với màu xám đậm */
+    border-radius: 10px;
+    /* Làm tròn các góc sản phẩm với bán kính 10px */
+    position: relative;
+    /* Định vị tương đối để các phần tử con bên trong có thể sử dụng position:absolute */
 }
 
-.productItem img{
-  /* cố định vị trí trong cái khung */
-  position: absolute;
-  top: 0;
-  /* bottom: 0; */
-  width: 180px;
-  height: auto;
-
-  padding: 10px;
-  border-radius: 10%;
+.productItem img {
+    /* Cố định vị trí ảnh bên trong khung sản phẩm */
+    position: absolute;
+    /* Đặt vị trí tuyệt đối để di chuyển ảnh so với khung sản phẩm */
+    top: 10px;
+    /* Đặt ảnh ở trên cùng của sản phẩm */
+    width: 180px;
+    /* Đặt chiều rộng của ảnh là 180px */
+    height: auto;
+    /* Chiều cao của ảnh sẽ thay đổi tỉ lệ với chiều rộng */
+    padding: 10px;
+    /* Tạo khoảng cách 10px giữa ảnh và khung sản phẩm */
+    border-radius: 10%;
+    /* Làm tròn các góc ảnh với bán kính 10% */
 }
 
-.productContent{
-  width: 180px;
-  position: absolute;
-  bottom: 0;
-  /* background: #000; */
-  padding: 12px;
+.productContent {
+    width: 200px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 0;
+    padding: 0px;
+    padding-bottom: 0px;
+    bottom: 0px;
+    display: block;
 }
 
-.productBottom{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.productBottom {
+    display: flex;
+    /* Sử dụng flexbox để sắp xếp các phần tử con bên trong */
+    justify-content: space-between;
+    /* Phân bố đều các phần tử con, mỗi bên một đầu */
+    align-items: center;
+    /* Căn giữa các phần tử theo chiều dọc */
+    padding-top: 7px;
+    /* Tạo khoảng cách 7px ở phía trên phần tử */
+    font-size: 15px;
+    /* Kích thước chữ của phần dưới sản phẩm là 15px */
+    font-weight: 700;
+    /* Độ đậm của chữ là 700 (bold) */
+    /* Màu sắc chữ là xanh lam nhạt */
+    /*background-color: #e8f6ea;*/
+    /* Màu nền của phần dưới sản phẩm là màu xanh nhạt (aliceblue) */
+    border-radius: 50px;
+    /* Làm tròn các góc của phần dưới với bán kính 50px */
+}
+
+.box1 {
+    color: #01796f;
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 900;
+    bottom: 5px;
+    left: 10px;
+    flex: 1;
+    bottom: 5px;
+    margin-bottom: 7px;
+}
+
+.box2 {
+    background-color: #e8f6ea;
+    color: #01796f;
+    font-weight: 800;
+    padding: 0px 12px;
+    /* border: 1px solid #cce7d0; */
+    cursor: 25px;
+    transition: transform 0.2s;
+    margin: 0px 0;
+    position: relative;
+    left: 170px;
+    bottom: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box3 {
+    font-size: 17px;
+    color: #BBBBBB;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.box4 {
+    font-size: 15px;
+    font-weight: initial;
+    color: #66CC33;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.p {
+    font-weight: 20px;
+    font-size: 10px;
+    color: rgb(81, 190, 154)
+}
+
+
+/* Hiệu ứng khi hover vào sản phẩm */
+
+.productItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3cqmax;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.box5 {
+    margin-left: 10px;
+    font-size: 16.125px;
+    margin-bottom: -15px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+.box6 {
+    margin-left: 12px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    padding-bottom: 0px;
+    padding-top: 10px
 }
