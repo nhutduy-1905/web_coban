@@ -1,272 +1,179 @@
-#box {
+#banner3 {
+    display: flex; /* Thiết lập bố cục flexbox cho phần tử này, cho phép sắp xếp con cái linh hoạt */
+    justify-content: space-between; /* Căn giữa các phần tử con với khoảng cách đều */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    padding: 0 75px; /* Thêm khoảng cách bên trong cho phần tử, 0 trên dưới và 75px trái phải */
+ }
+ 
+ #banner3 .banner-box {
+   display: flex; /* Thiết lập bố cục flexbox cho các hộp banner */
+   flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+   justify-content: center; /* Căn giữa các phần tử con theo chiều dọc */
+   align-items: flex-start; /* Căn các phần tử con về phía bên trái */
+   background-image: url(../../images/banner/b7.jpg); /* Thiết lập hình nền cho hộp banner từ đường dẫn chỉ định */
+   min-width: 23%; /* Đặt chiều rộng tối thiểu cho hộp banner */
+   height: 23vh; /* Đặt chiều cao cho hộp banner bằng 23% chiều cao của viewport */
+   background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ hộp */
+   background-position: center; /* Căn giữa hình nền trong hộp */
+   padding: 20px; /* Thêm khoảng cách bên trong cho hộp banner */
+   margin-bottom: 20px; /* Thêm khoảng cách dưới mỗi hộp banner */
+ }
+ 
+ #banner3 .banner-box .banner-box2 {
+     background-image: url(../../images/banner/4.jpg); /* Thiết lập hình nền cho hộp banner thứ hai */
+ }
+ 
+ #banner3 .banner-box .banner-box3 {
+     background-image: url(../../images/banner/b18.jpg); /* Thiết lập hình nền cho hộp banner thứ ba */
+ }
+ 
+ #banner3 h2 {
+    color: #fff; /* Đặt màu chữ cho tiêu đề h2 là trắng */
+    font-weight: 900; /* Thiết lập độ đậm cho chữ tiêu đề */
+    font-size: 24px; /* Đặt kích thước chữ cho tiêu đề */
+ }
+ 
+ #banner3 h3 {
+  color: #ec544e; /* Đặt màu chữ cho tiêu đề h3 là một màu đỏ đặc trưng */
+  font-weight: 800; /* Thiết lập độ đậm cho chữ tiêu đề h3 */
+  font-size: 15px; /* Đặt kích thước chữ cho tiêu đề h3 */
+ }
+ 
+ #newsletter {
+    display: flex; /* Thiết lập bố cục flexbox cho phần tử này */
+    justify-content: space-between; /* Căn giữa các phần tử con với khoảng cách đều */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+    background-image: url("../../images/banner/b14.png"); /* Thiết lập hình nền cho phần newsletter */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-position: 20% 30%; /* Căn hình nền ở vị trí cụ thể */
+    background-color: #041e42; /* Đặt màu nền cho phần newsletter */
+ }
+ 
+ .newtest {
+     padding: 10px 80px; /* Thêm khoảng cách bên trong cho phần tử mới, 10px trên dưới và 80px trái phải */
+     margin: 10px 0; /* Thêm khoảng cách bên ngoài cho phần tử mới, 10px trên dưới */
+    
+ }
+ 
+ #newsletter h4 {
+    font-size: 22px; /* Đặt kích thước chữ cho tiêu đề h4 */
+    font-weight: 700; /* Thiết lập độ đậm cho chữ tiêu đề h4 */
+    color: #fff; /* Đặt màu chữ cho tiêu đề h4 là trắng */
+    margin-bottom: 0px;
+    margin-top: 5px;
+    
+
+ }
+ 
+
+ #newsletter p {
+   font-size: 14px; /* Đặt kích thước chữ cho đoạn văn */
+   font-weight: 600; /* Thiết lập độ đậm cho chữ trong đoạn văn */
+   color: #818ea0; /* Đặt màu chữ cho đoạn văn */
+ 
+ }
+ 
+ #newsletter p span {
+    color: #ffbd27; /* Đặt màu chữ cho phần tử span trong đoạn văn */
+ }
+ 
+ #newsletter .form {
+     display: flex; /* Thiết lập bố cục flexbox cho phần tử form */
+     align-items: center; /* Căn giữa các phần tử con trong form theo chiều dọc */
+     margin-right: 80px; /* Thêm khoảng cách bên phải cho toàn bộ khung input và nút */
+ }
+ 
+ #newsletter input {
+     height: 40px; /* Đặt chiều cao cho ô input */
+     padding: 0 15px; /* Thêm khoảng cách bên trong cho ô input, 0 trên dưới và 15px trái phải */
+     font-size: 14px; /* Đặt kích thước chữ cho ô input */
+     width: 250px; /* Đặt chiều rộng cho ô input */
+    
+     border-right: none; /* Loại bỏ viền bên phải để nối với nút */
+     border-radius: 8px 0 0 8px; /* Bo tròn góc trái cho ô input */
+     outline: none; /* Loại bỏ viền ngoài khi ô input được chọn */
+ }
+ 
+ #newsletter button {
+     height: 42px; /* Đặt chiều cao cho nút */
+     padding: 0 20px; /* Thêm khoảng cách bên trong cho nút, 0 trên dưới và 20px trái phải */
+     background-color: #088178; /* Đặt màu nền cho nút */
+     color: #fff; /* Đặt màu chữ cho nút là trắng */
+     border: 2px solid #088178; /* Đặt viền cho nút với màu tương ứng */
+     border-left: none; /* Loại bỏ viền bên trái để nối với ô input */
+     border-radius: 0 8px 8px 0; /* Bo tròn góc phải cho nút */
+     cursor: pointer; /* Hiển thị con trỏ chuột như một nút có thể nhấp */
+ }
+ footer
+ {
     display: flex;
-    /* Thiết lập flexbox để xếp các phần tử con trong một hàng */
-    justify-content: space-between;
-    /* Căn đều khoảng cách giữa các phần tử con, tạo khoảng cách bằng nhau */
     flex-wrap: wrap;
-    /* Cho phép các phần tử con tự động xuống dòng nếu không đủ chỗ */
-    padding: 0 80px;
-    /* Tạo khoảng trống 80px ở hai bên trái và phải của phần tử */
-}
-
-#box .box-logic {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url("../../images/banner/b7.jpg");
-    min-width: 3%;
-    height: 30vh;
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-#box .box-logic1 {
-    background-image: url("../../images/banner/b4.jpg");
-}
-
-#box .box-logic2 {
-    background-image: url("../../images/banner/b18.jpg");  
-}
-
-#box .logic1,
-#box .logic2 {
-    color: white;
-    /* Tùy chọn màu chữ cho dễ nhìn */
-    text-align: center;
-    font-size: 16px;
-}
-
-#box .logic1 {
-    color: #fff;
-    font-size: 1.5cqmax;
-    padding-left: 90px;
-}
-
-#box .logic2 {
-    color: #ec544e;
-    padding-left: 90px;
-}
-
-#newsletter {
-    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-image: url("../../images/banner/b14.png");
-    background-repeat: no-repeat;
-    background-position: 20% 30%;
-    background-color: #818ea0;
-    margin-top: 40px;
+ }
+footer .col
+{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20%;
+   margin-left: 60px;
+   margin-top: 80px;
 }
-
-#newsletter h4 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #ffff;
-    text-align: left;
-    padding-left: 40px;
-    padding-bottom: 10px;
-    padding-top: 30px;
-}
-
-#newsletter p {
-    font-size: 14px;
-    /* Kích thước chữ 14px */
-    font-weight: 600;
-    /* Độ đậm chữ là 600 */
-    color: #C0C0C0;
-    /* Màu chữ xám nhạt */
-    text-align: left;
-    /* Căn trái chữ */
-    padding-left: 40px;
-    /* Tạo khoảng trống bên trái là 40px */
-    padding-top: 10px;
+footer logo
+{
+   margin-bottom: 25px;
+   
    
 }
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin-bottom: -10px;
+    margin-top: 20px;
 
-#newsletter p span {
-    color: #ffbd27;
-    /* Màu chữ vàng cho nội dung trong thẻ span */
-}
-
-#newsletter form {
-    display: flex;
-    /* Sử dụng flexbox cho phần form */
-    width: 100%;
-    /* Chiều rộng của form chiếm 100% */
-    justify-content: flex-start;
-    /* Căn trái các phần tử bên trong form */
-    padding-left: 40px;
-    /* Tạo khoảng trống bên trái là 40px */
-}
-
-#newsletter input {
-    height: 2rem;
-    /* Chiều cao ô input là 2rem */
-    padding-left: 20px;
-    /* Tạo khoảng trống bên trong ô input ở phía trái là 20px */
-    font-size: 10px;
-    /* Kích thước chữ bên trong ô input là 10px */
-    width: 200px;
-    /* Chiều rộng của ô input là 200px */
-    border: 1px solid transparent;
-    /* Viền của ô input là trong suốt */
-    border-radius: 4px 0 0 4px;
-    /* Bo tròn các góc bên trái của ô input */
-    outline: none;
-    /* Xóa viền mặc định khi click vào ô input */
-    margin-right: -5px;
-    /* Đảm bảo ô input và nút nối sát nhau không có khoảng trắng */
-}
-
-#newsletter button {
-    background-color: #088178;
-    /* Màu nền của nút là màu xanh */
-    color: #fff;
-    /* Màu chữ là trắng */
-    white-space: nowrap;
-    /* Đảm bảo chữ trong nút không bị xuống dòng */
-    border: 1px solid transparent;
-    /* Viền của nút là trong suốt */
-    border-radius: 0 4px 4px 0;
-    /* Bo tròn các góc bên phải của nút */
-    height: 2rem;
-    /* Đảm bảo chiều cao của nút tương ứng với ô input */
-}
-
-.normal {
-    margin-right: 70px;
-    /* Tạo khoảng cách bên phải là 70px */
-    padding-top: 8.5px;
-    padding-bottom: 26.124px;
-    /* Tạo khoảng cách trên và dưới của phần tử */
-    padding-left: 20px;
-    /* Tạo khoảng trống bên trái là 20px */
-}
-
-footer {
-    display: flex;
-    /* Sử dụng flexbox cho footer */
-    flex-wrap: wrap;
-    /* Cho phép các phần tử con tự động xuống dòng */
-    justify-content: space-between;
-    /* Căn đều khoảng cách giữa các phần tử con */
-    
-}
-
-.icon {
-    margin: -10px;
-    margin-left: 0px;
-    margin-top: -30px;
-    /* Khoảng cách âm 10px */
-}
-
-footer .col {
-    display: flex;
-    /* Sử dụng flexbox cho cột */
-    flex-direction: column;
-    /* Sắp xếp các phần tử con theo chiều dọc */
-    align-items: flex-start;
-    /* Căn các phần tử con về phía trái */
-    margin-bottom: 20px;
-    /* Tạo khoảng cách dưới các cột là 20px */
-    padding-bottom: 30px;
-    padding-left: 30px;
-}
-
-footer .logo {
-    margin-top: 35px;
-    margin-bottom: 20px;
-    /* Tạo khoảng cách phía trên logo là 35px */
-}
-
-footer h4 {
-    /* Tạo khoảng cách phía trên tiêu đề là 35px */
-    font-size: 15px;
-    /* Kích thước chữ 15px */
-    padding-bottom: 10px;
-    /* Tạo khoảng cách phía dưới là 20px */
-    color: #222;
-    margin-right: 60px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-}
-
-footer p {
-    margin-top: 35px;
-    font-size: 13px;
-    /* Kích thước chữ 13px */
-     margin: 0 0 8px 0; 
-
-    /* Tạo khoảng cách dưới mỗi đoạn văn là 8px */
-}
-
-footer a {
-    font-size: 13px;
-    /* Kích thước chữ 13px */
-    text-decoration: none;
-    /* Xóa gạch chân mặc định của liên kết */
-    color: #222;
-    /* Màu chữ xám đen */
-    margin-bottom: 10px;
-    /* Tạo khoảng cách bên dưới mỗi liên kết là 10px */
-}
-
-footer .follow {
-    /* Tạo khoảng cách trên cùng của phần follow là 20px */
-    padding-bottom: 30px;
-    margin-top: 0px;
-}
-
-footer .follow i {
-    color: #465b52;
-    /* Màu biểu tượng xám nhạt */
-    padding-right: 4px;
-    /* Tạo khoảng cách bên phải của biểu tượng là 4px */
-    cursor: pointer;
-    /* Con trỏ chuột sẽ chuyển thành hình bàn tay khi hover vào biểu tượng */
-}
-
-footer .install .row img {
-    display: block;
-    align-items: center;
-    border-radius: 6px;
-    border: 1px solid #088178;
-    /* Viền của hình ảnh là viền xanh */
-    border-radius: 10px;
-    /* Bo tròn các góc của hình ảnh */
-    margin-left: 5px;
-    /* Tạo khoảng cách bên trái là 5px */
-    height: 100%;
-    /* Chiều cao của hình ảnh chiếm toàn bộ phần tử cha */
-    width: 100%;
-}
-
-
-footer .follow i:hover,
-footer a:hover {
-    color: #088178;
-    /* Khi hover vào biểu tượng hoặc liên kết, màu sẽ đổi thành màu xanh */
-}
-
-.story {
-    margin-top: 40px;
-    /* Tạo khoảng cách phía trên là 40px */
-    margin-left: 60px;
-    /* Tạo khoảng cách bên trái là 60px */
-}
-
-.install {
-    margin-right: 20px;
-    /* Tạo khoảng cách bên phải là 20px */
-    margin-right: 80px;
   
 }
-.install p{
-    margin-bottom: 20px;
-    margin-top: 0px;
-   
+footer p
+{
+   font-size: 13px;
+   margin: 0 0 8px 0;
+   margin-bottom: 20px;
+   margin-top: 10px;
+   margin-right: 0px;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom: 10px;
+}
+footer .follow
+{
+  margin: top 20px;
+}
+footer .follow i
+{
+  color:#465b52;
+  padding-right: 4px;
+  cursor: pointer;
+  
+}
+footer .install .row img
+{
+  border: 1px solid #088178;
+  border-radius:6px;
+  margin-right: 40px;
+  margin-left: -40px;
+ 
+}
+footer .install img
+{
+   margin: 10px 0 15px 20;
+ 
+}
+footer .follow i:hover
+footer a:hover
+{
+  color:#088178
 }
