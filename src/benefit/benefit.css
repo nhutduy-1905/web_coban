@@ -1,85 +1,86 @@
-.benefitContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-right: -30px;
-    margin-left: -30px;
+#featured {
+    display: flex;              
+     /* Tạo container flexbox để sắp xếp các phần tử con */
+    align-items: center;         
+    /* Căn giữa các phần tử con theo chiều dọc (trục y) */
+    justify-content: space-between; 
+    /* Phân phối các phần tử con cách đều nhau theo chiều ngang (trục x) */
+    flex-wrap: wrap;              
+    /* Cho phép các phần tử con xuống dòng khi không đủ không gian */
+ }
+ 
+ #featured .fe-box {
+    width: 150px;                 
+    /* Đặt chiều rộng cho mỗi hộp là 120px */
+    text-align: center;           
+    /* Căn giữa nội dung văn bản trong mỗi hộp */
+    padding:   5px 5px;          
+     /* Khoảng đệm bên trong mỗi hộp (15px trên dưới, 10px trái phải) */
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03); 
+     /* Tạo bóng cho hộp với độ mờ nhẹ */
+    border: 1px solid #cce7d0;    
+    /* Tạo viền màu xanh nhạt cho mỗi hộp */
+    border-radius: 4px;           
+    /* Bo tròn góc của hộp với bán kính 4px */
+    margin: 15px 0;                 
+    /* Tạo khoảng cách ngoài cho mỗi hộp là 15px */
+    margin-left: 10px;
+    margin-right: 10px;
+  
+ }
+ 
+ #featured .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1); 
+    /* Tăng bóng khi di chuột qua hộp */
+ }
+ 
+ #featured .fe-box img {
+    width: 100%;                  
+    /* Đặt chiều rộng ảnh bằng 100% của hộp chứa */
+    margin-bottom: 10px;          
+    /* Khoảng cách dưới của ảnh là 10px */
+ }
+ 
+ #featured .fe-box h6 {
+   display: inline-block;       
+     /* Hiển thị tiêu đề h6 dưới dạng khối nội tuyến */
+   padding: 9px 8px 6px 8px;     
+    /* Khoảng đệm bên trong tiêu đề h6 (trên 9px, phải 8px, dưới 6px, trái 8px) */
+   line-height: 1;               
+    /* Chiều cao dòng là 1 */
+   border-radius: 4px;            
+   /* Bo tròn góc của tiêu đề với bán kính 4px */
+   color: #088178;              
+     /* Màu chữ xanh lá cây */
+   background-color: #fddde4;    
+    /* Nền màu hồng nhạt cho tiêu đề */
+    margin-top: 0px;
    
-}
-.benefitItem {
-    width: 130px;
-    border: 1px solid #27ae60;
-    box-shadow: 1px 1px #888888;
-    /* center div */
-    display: flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items: center;
-    /* padding */
-    padding-right:  10px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.freeShiping {
-    margin-top: 15px;
-    background:#FFCCCC;
-    color: #27ae60;
-    padding: 8px;
-}
+ }
+ 
+ #featured .fe-box:nth-child(2) h6 {
+   background-color: #cdebbc;     
+   /* Nền màu xanh nhạt cho hộp thứ hai */
+ }
+ 
+ #featured .fe-box:nth-child(3) h6 {
+   background-color: #d1e8f2;    
+    /* Nền màu xanh nhạt cho hộp thứ ba */
+ }
+ 
+ #featured .fe-box:nth-child(4) h6 {
+   background-color: #cdd4f8;     
+   /* Nền màu xanh dương nhạt cho hộp thứ tư */
+ }
+ 
+ #featured .fe-box:nth-child(5) h6 {
+   background-color: #f6dbf6;    
+    /* Nền màu tím nhạt cho hộp thứ năm */
+ }
+ 
+ #featured .fe-box:nth-child(6) h6 {
+   background-color: #fff2e5;     
+   /* Nền màu cam nhạt cho hộp thứ sáu */
+   
+ }
 
-.Onlineoder {
-    margin-top: 15px;
-    background:#99FF99;
-    color: #27ae60;
-    padding: 8px;
-}
-
-.Savemoney {
-    margin-top: 15px;
-    background:#98F5FF;
-    color: #27ae60;
-    padding: 5px;
-}
-
-
-.Prommotions {
-    margin-top: 15px;
-    background:#FFBBFF;
-    color: #27ae60;
-    padding: 5px;
-}
-
-.Happysell {
-    margin-top: 15px;
-    background: rgb(243, 183, 215);
-    color: #27ae60;
-    padding: 5px;
-}
-
-.support{
-    margin-top: 15px;
-    background:#FFDAB9;
-    color: #27ae60;
-    padding: 10px;
-}
-
-
-
-/* .benefitContainer .Product1:hover .Product2:hover .Product3:hover .Product4:hover.Product5:hover.Product6:hover {
-    box-shadow: 10px 10px 20px rgba(70, 62, 221, 0.1);
-}
-
-.benefitContainer .Product1 .Product2 .Product3.Product4 .Product5 .Product6 h6 img {
-    width: 100px;
-    margin-bottom: 5px;
-}
-
-.benefitContainer .Product1 .Product2 .Product3 .Product4 .Peoduct5 .Product6 h6 {
-    display: inline-block;
-    line-height: 1;
-    padding: 9px 8px 7px 6px;
-    border-radius: 4px;
-    color: #08534f;
-    background-color: #1ee00c;
-} */
