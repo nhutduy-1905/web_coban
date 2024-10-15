@@ -10,11 +10,11 @@
  }
  
  #featured .fe-box {
-    width: 150px;                 
+    width: 135px;                 
     /* Đặt chiều rộng cho mỗi hộp là 120px */
     text-align: center;           
     /* Căn giữa nội dung văn bản trong mỗi hộp */
-    padding:   5px 5px;          
+    /* padding:   10px 15px;           */
      /* Khoảng đệm bên trong mỗi hộp (15px trên dưới, 10px trái phải) */
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03); 
      /* Tạo bóng cho hộp với độ mờ nhẹ */
@@ -22,13 +22,13 @@
     /* Tạo viền màu xanh nhạt cho mỗi hộp */
     border-radius: 4px;           
     /* Bo tròn góc của hộp với bán kính 4px */
-    margin: 15px 0;                 
+    /* margin: 15px 0;                  */
     /* Tạo khoảng cách ngoài cho mỗi hộp là 15px */
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 13px;
+    
   
  }
- 
+
  #featured .fe-box:hover {
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1); 
     /* Tăng bóng khi di chuột qua hộp */
@@ -39,6 +39,7 @@
     /* Đặt chiều rộng ảnh bằng 100% của hộp chứa */
     margin-bottom: 10px;          
     /* Khoảng cách dưới của ảnh là 10px */
+    padding: 5px 5px;
  }
  
  #featured .fe-box h6 {
@@ -55,7 +56,7 @@
    background-color: #fddde4;    
     /* Nền màu hồng nhạt cho tiêu đề */
     margin-top: 0px;
-   
+    
  }
  
  #featured .fe-box:nth-child(2) h6 {

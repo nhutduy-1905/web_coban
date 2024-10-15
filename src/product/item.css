@@ -1,7 +1,7 @@
 #banner3 {
     display: flex; /* Thiết lập bố cục flexbox cho phần tử này, cho phép sắp xếp con cái linh hoạt */
     justify-content: space-between; /* Căn giữa các phần tử con với khoảng cách đều */
-    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    /* flex-wrap: wrap; Cho phép các phần tử con xuống dòng nếu không đủ không gian */
     padding: 0 75px; /* Thêm khoảng cách bên trong cho phần tử, 0 trên dưới và 75px trái phải */
  }
  
@@ -11,32 +11,41 @@
    justify-content: center; /* Căn giữa các phần tử con theo chiều dọc */
    align-items: flex-start; /* Căn các phần tử con về phía bên trái */
    background-image: url(../../images/banner/b7.jpg); /* Thiết lập hình nền cho hộp banner từ đường dẫn chỉ định */
-   min-width: 23%; /* Đặt chiều rộng tối thiểu cho hộp banner */
-   height: 23vh; /* Đặt chiều cao cho hộp banner bằng 23% chiều cao của viewport */
+   min-width: 30%; /* Đặt chiều rộng tối thiểu cho hộp banner */
+   height: 24vh; /* Đặt chiều cao cho hộp banner bằng 23% chiều cao của viewport */
    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ hộp */
    background-position: center; /* Căn giữa hình nền trong hộp */
-   padding: 20px; /* Thêm khoảng cách bên trong cho hộp banner */
-   margin-bottom: 20px; /* Thêm khoảng cách dưới mỗi hộp banner */
+   padding: 30px; /* Thêm khoảng cách bên trong cho hộp banner */
+   margin-bottom: 30px; /* Thêm khoảng cách dưới mỗi hộp banner */
+   margin-right: 30px;
+  
  }
  
- #banner3 .banner-box .banner-box2 {
-     background-image: url(../../images/banner/4.jpg); /* Thiết lập hình nền cho hộp banner thứ hai */
+ #banner3 .banner-box2 {
+     background-image: url(../../images/banner/b4.jpg);
+      /* Thiết lập hình nền cho hộp banner thứ hai */
+      padding-left: 10px;
  }
  
- #banner3 .banner-box .banner-box3 {
-     background-image: url(../../images/banner/b18.jpg); /* Thiết lập hình nền cho hộp banner thứ ba */
+ #banner3 .banner-box3 {
+     background-image: url(../../images/banner/b18.jpg); 
+     padding-left: 10px;/* Thiết lập hình nền cho hộp banner thứ ba */
  }
  
  #banner3 h2 {
     color: #fff; /* Đặt màu chữ cho tiêu đề h2 là trắng */
     font-weight: 900; /* Thiết lập độ đậm cho chữ tiêu đề */
-    font-size: 24px; /* Đặt kích thước chữ cho tiêu đề */
+    font-size: 17px; /* Đặt kích thước chữ cho tiêu đề */
+    margin-bottom: -30px;
+    margin-right: 20px;
+    margin-left: 28px;
  }
  
  #banner3 h3 {
   color: #ec544e; /* Đặt màu chữ cho tiêu đề h3 là một màu đỏ đặc trưng */
   font-weight: 800; /* Thiết lập độ đậm cho chữ tiêu đề h3 */
-  font-size: 15px; /* Đặt kích thước chữ cho tiêu đề h3 */
+  font-size: 10px; /* Đặt kích thước chữ cho tiêu đề h3 */
+  margin-bottom:-10px ;
  }
  
  #newsletter {

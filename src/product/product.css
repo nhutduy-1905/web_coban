@@ -1,181 +1,95 @@
-.product {
-    width: 100%;
-    /* Đảm bảo phần tử .product chiếm toàn bộ chiều rộng của container cha */
-    margin-bottom: 40px;
+#product1
+{
+   text-align: center; /* Căn giữa tất cả nội dung văn bản bên trong phần tử #product1 */
 }
 
-.productTitle {
-    display: flex;
-    /* Kích hoạt chế độ flexbox để sắp xếp các phần tử con */
-    flex-direction: column;
-    /* Sắp xếp các phần tử con theo cột (trục dọc) */
-    justify-content: center;
-    /* Căn giữa các phần tử con theo trục chính (chiều dọc) */
-    align-items: center;
-    /* Căn giữa các phần tử con theo trục phụ (chiều ngang) */
+#product1 .pro-container
+{
+   display: flex; /* Sử dụng flexbox để bố trí các phần tử con */
+   justify-content: space-between; /* Căn đều các phần tử con với khoảng cách đều nhau */
+   padding-top: 20px; /* Tạo khoảng cách trên cùng cho phần tử */
+   flex-wrap: wrap; /* Cho phép các phần tử con xuống hàng khi không đủ chỗ */
 }
 
-.productContainer {
-    width: 100%;
-    /* Đảm bảo phần tử .productContainer chiếm toàn bộ chiều rộng của khung chứa */
-    margin-top: 25px;
-    /* Tạo khoảng cách phía trên phần tử 25px */
-    display: flex;
-    /* Sử dụng flexbox để sắp xếp các sản phẩm bên trong */
-    justify-content: space-around;
-    /* Phân bố không gian đều giữa các sản phẩm */
+#product1 .pro
+{
+    width: 5%; /* Đặt chiều rộng của mỗi sản phẩm là 5% của khối chứa */
+    min-width: 220px; /* Đảm bảo mỗi sản phẩm có chiều rộng tối thiểu là 250px */
+    padding: 10px 5px; /* Tạo khoảng cách giữa nội dung bên trong phần tử và viền */
+    border: 1px solid #cce7d0; /* Tạo viền mỏng màu #cce7d0 */
+    border-radius: 25px; /* Làm tròn góc các viền với bán kính 25px */
+    cursor: pointer; /* Thay đổi con trỏ thành hình tay khi di chuột lên */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); /* Tạo hiệu ứng đổ bóng nhạt cho phần tử */
+    margin: 15px 0; /* Tạo khoảng cách trên và dưới của phần tử */
+    transition: 0.2 ease; /* Tạo hiệu ứng chuyển động mượt khi có sự thay đổi */
+    position: relative; /* Đặt phần tử ở vị trí tương đối để các phần tử con có thể định vị dựa vào nó */
 }
 
-.productItem {
-    width: 210px;
-    /* Chiều rộng cố định của mỗi sản phẩm là 210px */
-    height: 300px;
-    /* Chiều cao cố định của mỗi sản phẩm là 300px */
-    /* background: #f0932b; */
-    /* Màu nền cho sản phẩm (đã bị tắt) */
-    margin: 15px;
-    /* Khoảng cách giữa các sản phẩm là 15px */
-    border: 1px solid #535c68;
-    /* Đường viền xung quanh sản phẩm với màu xám đậm */
-    border-radius: 10px;
-    /* Làm tròn các góc sản phẩm với bán kính 10px */
-    position: relative;
-    /* Định vị tương đối để các phần tử con bên trong có thể sử dụng position:absolute */
+#product1 .pro:hover 
+{
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06); /* Tăng cường đổ bóng khi người dùng hover chuột lên sản phẩm */
 }
 
-.productItem img {
-    /* Cố định vị trí ảnh bên trong khung sản phẩm */
-    position: absolute;
-    /* Đặt vị trí tuyệt đối để di chuyển ảnh so với khung sản phẩm */
-    top: 10px;
-    /* Đặt ảnh ở trên cùng của sản phẩm */
-    width: 180px;
-    /* Đặt chiều rộng của ảnh là 180px */
-    height: auto;
-    /* Chiều cao của ảnh sẽ thay đổi tỉ lệ với chiều rộng */
-    padding: 10px;
-    /* Tạo khoảng cách 10px giữa ảnh và khung sản phẩm */
-    border-radius: 10%;
-    /* Làm tròn các góc ảnh với bán kính 10% */
+#product1 .pro img
+{
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng của phần tử chứa */
+    border-radius: 20px; /* Làm tròn góc các hình ảnh */
+    margin-bottom: -10px;
 }
 
-.productContent {
-    width: 200px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    position: absolute;
-    bottom: 0;
-    padding: 0px;
-    padding-bottom: 0px;
-    bottom: 0px;
-    display: block;
+#product1 .pro .des
+{
+   text-align: start; /* Căn trái văn bản trong mô tả */
+   padding: 10px 0; /* Tạo khoảng cách trên và dưới cho phần mô tả */
 }
 
-.productBottom {
-    display: flex;
-    /* Sử dụng flexbox để sắp xếp các phần tử con bên trong */
-    justify-content: space-between;
-    /* Phân bố đều các phần tử con, mỗi bên một đầu */
-    align-items: center;
-    /* Căn giữa các phần tử theo chiều dọc */
-    padding-top: 7px;
-    /* Tạo khoảng cách 7px ở phía trên phần tử */
-    font-size: 15px;
-    /* Kích thước chữ của phần dưới sản phẩm là 15px */
-    font-weight: 700;
-    /* Độ đậm của chữ là 700 (bold) */
-    /* Màu sắc chữ là xanh lam nhạt */
-    /*background-color: #e8f6ea;*/
-    /* Màu nền của phần dưới sản phẩm là màu xanh nhạt (aliceblue) */
-    border-radius: 50px;
-    /* Làm tròn các góc của phần dưới với bán kính 50px */
+#product1 .pro .des span
+{
+   color: #606063; /* Đặt màu chữ cho thẻ <span> */
+   font-size: 12px; /* Đặt kích thước chữ là 12px */
 }
 
-.box1 {
-    color: #01796f;
-    font-weight: bolder;
-    position: absolute;
-    font-size: 15px;
-    font-weight: 900;
-    bottom: 5px;
-    left: 10px;
-    flex: 1;
-    bottom: 5px;
-    margin-bottom: 7px;
+#product1 .pro .des h5
+{
+   padding-top: 7px; /* Tạo khoảng cách trên cho tiêu đề h5 */
+   color: #1a1a1a; /* Đặt màu chữ tối cho tiêu đề h5 */
+   font-size: 14px; /* Đặt kích thước chữ là 14px */
+   margin-top: -5px;
+   margin-bottom: 0px;
+   margin-left: 0px;
 }
 
-.box2 {
-    background-color: #e8f6ea;
-    color: #01796f;
-    font-weight: 800;
-    padding: 0px 12px;
-    /* border: 1px solid #cce7d0; */
-    cursor: 25px;
-    transition: transform 0.2s;
-    margin: 0px 0;
-    position: relative;
-    left: 170px;
-    bottom: 10px;
-    border-radius: 20px;
-    font-size: 1rem;
-    padding: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+#product1 .pro .des i
+{
+    font-size: 12px; /* Đặt kích thước chữ cho các biểu tượng sao */
+    color: rgb(243, 181, 25); /* Màu vàng cho các biểu tượng sao */
 }
 
-.box3 {
-    font-size: 17px;
-    color: #BBBBBB;
-    margin-left: 10px;
-    margin-top: 0px;
+#product1 .pro .des h4
+{
+   padding-top: 7px; /* Tạo khoảng cách trên cho thẻ h4 */
+   font-size: 15px; /* Đặt kích thước chữ là 15px */
+   font-weight: 700; /* Đặt độ đậm của chữ là 700 (bold) */
+   color:#088178; /* Đặt màu xanh lá cho giá sản phẩm */
+   margin-top: 0px;
 }
 
-.box4 {
-    font-size: 15px;
-    font-weight: initial;
-    color: #66CC33;
+#product1 .pro .cart
+{
+  width: 40px; /* Đặt chiều rộng của biểu tượng giỏ hàng */
+  height: 40px; /* Đặt chiều cao của biểu tượng giỏ hàng */
+  line-height: 40px; /* Canh giữa biểu tượng giỏ hàng theo chiều dọc */
+  border-radius: 50px; /* Làm tròn biểu tượng giỏ hàng thành hình tròn */
+  background-color: #e8f6ea; /* Đặt màu nền xanh nhạt cho giỏ hàng */
+  font-weight: 500; /* Đặt độ đậm của chữ trong giỏ hàng là 500 */
+  color:#088178; /* Màu chữ xanh lá cho biểu tượng giỏ hàng */
+  border: 1px solid #cce7d0; /* Tạo viền mỏng màu xanh nhạt cho giỏ hàng */
+  position: absolute; /* Đặt biểu tượng giỏ hàng ở vị trí tuyệt đối trong phần tử cha */
+  bottom:20px; /* Đặt biểu tượng cách đáy 20px */
+  right: 10px; /* Đặt biểu tượng cách phải 10px */
+  margin-bottom:-10px;
 }
-
-h2 {
-    font-weight: bolder;
-    font-size: 50px;
-}
-
-.p {
-    font-weight: 20px;
-    font-size: 10px;
-    color: rgb(81, 190, 154)
-}
-
-
-/* Hiệu ứng khi hover vào sản phẩm */
-
-.productItem:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-    font-size: 3cqmax;
-    margin-bottom: 10px;
-    margin-top: 40px;
-}
-
-.box5 {
-    margin-left: 10px;
-    font-size: 16.125px;
-    margin-bottom: -15px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-}
-
-.box6 {
-    margin-left: 12px;
-    margin-top: 0px;
-    margin-bottom: -5px;
-    padding-bottom: 0px;
-    padding-top: 10px
+h2
+{
+   margin-bottom: 10px;
 }
