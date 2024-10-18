@@ -10,22 +10,23 @@
  }
  
  #featured .fe-box {
-    width: 135px;                 
+    width: 100px;                 
     /* Đặt chiều rộng cho mỗi hộp là 120px */
     text-align: center;           
     /* Căn giữa nội dung văn bản trong mỗi hộp */
-    /* padding:   10px 15px;           */
+     padding:   10px 15px;           
      /* Khoảng đệm bên trong mỗi hộp (15px trên dưới, 10px trái phải) */
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03); 
      /* Tạo bóng cho hộp với độ mờ nhẹ */
     border: 1px solid #cce7d0;    
     /* Tạo viền màu xanh nhạt cho mỗi hộp */
-    border-radius: 4px;           
+    border-radius: px;           
     /* Bo tròn góc của hộp với bán kính 4px */
-    /* margin: 15px 0;                  */
+     margin: 10px;                  
     /* Tạo khoảng cách ngoài cho mỗi hộp là 15px */
-    margin-left: 13px;
-    
+    margin-left:25px;
+    margin-top: 40px;
+    margin-right: 25px;
   
  }
 
