@@ -20,7 +20,7 @@
      /* Tạo bóng cho hộp với độ mờ nhẹ */
     border: 1px solid #cce7d0;    
     /* Tạo viền màu xanh nhạt cho mỗi hộp */
-    border-radius: px;           
+    border-radius: 5px;           
     /* Bo tròn góc của hộp với bán kính 4px */
      margin: 10px;                  
     /* Tạo khoảng cách ngoài cho mỗi hộp là 15px */
