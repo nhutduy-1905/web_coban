@@ -14,7 +14,7 @@
 #product1 .pro
 {
     width: 5%; /* Đặt chiều rộng của mỗi sản phẩm là 5% của khối chứa */
-    min-width: 220px; /* Đảm bảo mỗi sản phẩm có chiều rộng tối thiểu là 250px */
+    min-width: 300px; /* Đảm bảo mỗi sản phẩm có chiều rộng tối thiểu là 250px */
     padding: 10px 5px; /* Tạo khoảng cách giữa nội dung bên trong phần tử và viền */
     border: 1px solid #cce7d0; /* Tạo viền mỏng màu #cce7d0 */
     border-radius: 25px; /* Làm tròn góc các viền với bán kính 25px */

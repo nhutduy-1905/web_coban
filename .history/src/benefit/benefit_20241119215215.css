@@ -10,7 +10,7 @@
  }
  
  #featured .fe-box {
-    width: 120px;                 
+    width: 140px;                 
     /* Đặt chiều rộng cho mỗi hộp là 120px */
     text-align: center;           
     /* Căn giữa nội dung văn bản trong mỗi hộp */
@@ -46,7 +46,7 @@
  #featured .fe-box h6 {
    display: inline-block;       
      /* Hiển thị tiêu đề h6 dưới dạng khối nội tuyến */
-   padding: 12px 10px 10px 9px;     
+   padding: 12px 10px 10px 8px;     
     /* Khoảng đệm bên trong tiêu đề h6 (trên 9px, phải 8px, dưới 6px, trái 8px) */
    line-height: 1;               
     /* Chiều cao dòng là 1 */

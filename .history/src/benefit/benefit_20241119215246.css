@@ -10,7 +10,7 @@
  }
  
  #featured .fe-box {
-    width: 120px;                 
+    width: 140px;                 
     /* Đặt chiều rộng cho mỗi hộp là 120px */
     text-align: center;           
     /* Căn giữa nội dung văn bản trong mỗi hộp */
@@ -50,7 +50,7 @@
     /* Khoảng đệm bên trong tiêu đề h6 (trên 9px, phải 8px, dưới 6px, trái 8px) */
    line-height: 1;               
     /* Chiều cao dòng là 1 */
-   border-radius: 4px;            
+   border-radius: 6px;            
    /* Bo tròn góc của tiêu đề với bán kính 4px */
    color: #088178;              
      /* Màu chữ xanh lá cây */
