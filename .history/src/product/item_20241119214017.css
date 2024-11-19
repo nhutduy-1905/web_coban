@@ -1,0 +1,198 @@
+#banner3 {
+    display: flex; /* Thiết lập bố cục flexbox cho phần tử này, cho phép sắp xếp con cái linh hoạt */
+    justify-content: space-between; /* Căn giữa các phần tử con với khoảng cách đều */
+    /* flex-wrap: wrap; Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    padding: 0 75px; /* Thêm khoảng cách bên trong cho phần tử, 0 trên dưới và 75px
+     trái phải */
+
+ }
+ 
+ #banner3 .banner-box {
+   display: flex; /* Thiết lập bố cục flexbox cho các hộp banner */
+   flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+   justify-content: center; /* Căn giữa các phần tử con theo chiều dọc */
+   align-items: flex-start; /* Căn các phần tử con về phía bên trái */
+   background-image: url(../../images/banner/b7.jpg); /* Thiết lập hình nền cho hộp banner từ đường dẫn chỉ định */
+   min-width: 30%; /* Đặt chiều rộng tối thiểu cho hộp banner */
+   height: 24vh; /* Đặt chiều cao cho hộp banner bằng 23% chiều cao của viewport */
+   background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ hộp */
+   background-position: center; /* Căn giữa hình nền trong hộp */
+   padding-top: 10px;
+   padding-bottom: -20px; /* Thêm khoảng cách bên trong cho hộp banner */
+   margin-bottom: 30px; /* Thêm khoảng cách dưới mỗi hộp banner */
+   margin-right: 20px;
+  
+ }
+ 
+ #banner3 .banner-box2 {
+     background-image: url(../../images/banner/b4.jpg);
+      /* Thiết lập hình nền cho hộp banner thứ hai */
+      padding-left: 10px;
+ }
+ 
+ #banner3 .banner-box3 {
+     background-image: url(../../images/banner/b18.jpg); 
+     padding-left: 10px;/* Thiết lập hình nền cho hộp banner thứ ba */
+ }
+ 
+ #banner3 h2 {
+    color: #fff; /* Đặt màu chữ cho tiêu đề h2 là trắng */
+    font-weight: 900; /* Thiết lập độ đậm cho chữ tiêu đề */
+    font-size: 18px; /* Đặt kích thước chữ cho tiêu đề */
+    margin-bottom: -20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -5px;
+ }
+ 
+ #banner3 h3 {
+  color:#8B0000; /* Đặt màu chữ cho tiêu đề h3 là một màu đỏ đặc trưng */
+  font-weight: 900; /* Thiết lập độ đậm cho chữ tiêu đề h3 */
+  font-size: 10px; /* Đặt kích thước chữ cho tiêu đề h3 */
+  margin-bottom: 10px;
+  margin-right: 25px;
+  margin-left: 20px;
+
+ 
+
+ }
+ 
+ #newsletter {
+    height: 140px;
+    display:flex; /* Thiết lập bố cục flexbox cho phần tử này */
+    justify-content: space-between; /* Căn giữa các phần tử con với khoảng cách đều */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+    background-image: url("../../images/banner/b14.png"); /* Thiết lập hình nền cho phần newsletter */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-position: 20% 30%; /* Căn hình nền ở vị trí cụ thể */
+    background-color: #041e42; /* Đặt màu nền cho phần newsletter */
+
+
+ }
+ 
+ .newtest {
+     padding: 10px 80px; /* Thêm khoảng cách bên trong cho phần tử mới, 10px trên dưới và 80px trái phải */
+     margin: 10px 0px ; /* Thêm khoảng cách bên ngoài cho phần tử mới, 10px trên dưới */
+      
+ }
+ 
+ #newsletter h4 {
+    font-size: 22px; /* Đặt kích thước chữ cho tiêu đề h4 */
+    font-weight: 700; /* Thiết lập độ đậm cho chữ tiêu đề h4 */
+    color: #fff; /* Đặt màu chữ cho tiêu đề h4 là trắng */
+   
+    margin-top: 5px;
+    
+
+ }
+ 
+
+ #newsletter p {
+   font-size: 14px; /* Đặt kích thước chữ cho đoạn văn */
+   font-weight: 600; /* Thiết lập độ đậm cho chữ trong đoạn văn */
+   color: #818ea0; /* Đặt màu chữ cho đoạn văn */
+ 
+ }
+ 
+ #newsletter p span {
+    color: #ffbd27; /* Đặt màu chữ cho phần tử span trong đoạn văn */
+ }
+ 
+ #newsletter .form {
+     display: flex; /* Thiết lập bố cục flexbox cho phần tử form */
+     align-items: center; /* Căn giữa các phần tử con trong form theo chiều dọc */
+     margin-right: 80px; /* Thêm khoảng cách bên phải cho toàn bộ khung input và nút */
+ }
+ 
+ #newsletter input {
+     height: 40px; /* Đặt chiều cao cho ô input */
+     padding: 0 15px; /* Thêm khoảng cách bên trong cho ô input, 0 trên dưới và 15px trái phải */
+     font-size: 14px; /* Đặt kích thước chữ cho ô input */
+     width: 250px; /* Đặt chiều rộng cho ô input */
+    
+     border-right: none; /* Loại bỏ viền bên phải để nối với nút */
+     border-radius: 8px 0 0 8px; /* Bo tròn góc trái cho ô input */
+     outline: none; /* Loại bỏ viền ngoài khi ô input được chọn */
+ }
+ 
+ #newsletter button {
+     height: 42px; /* Đặt chiều cao cho nút */
+     padding: 0 20px; /* Thêm khoảng cách bên trong cho nút, 0 trên dưới và 20px trái phải */
+     background-color: #088178; /* Đặt màu nền cho nút */
+     color: #fff; /* Đặt màu chữ cho nút là trắng */
+     border: 2px solid #088178; /* Đặt viền cho nút với màu tương ứng */
+     border-left: none; /* Loại bỏ viền bên trái để nối với ô input */
+     border-radius: 0 8px 8px 0; /* Bo tròn góc phải cho nút */
+     cursor: pointer; /* Hiển thị con trỏ chuột như một nút có thể nhấp */
+ }
+ footer
+ {
+     background-color:#DCDCDC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+footer .col
+{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20%;
+   margin-left: 30px;
+   margin-top: 80px;
+   margin-right: 25px;
+}
+footer logo
+{
+   margin-bottom: 25px;  
+}
+footer h4{
+    font-size: 14px;
+}
+footer p
+{
+   font-size: 13px;
+   color:#484848;
+   margin-bottom: 10px;
+   margin-top: 5px;
+   margin-right: 0px;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#484848;
+    margin-bottom: 10px;
+}
+footer .follow
+{
+  margin-bottom: -20px;
+}
+footer .follow i
+{
+  color:#484848;
+  padding-right: 4px;
+  cursor: pointer;
+  
+}
+footer .install .row img
+{
+  border: 1px solid #088178;
+  border-radius:6px;
+  margin-right: 10px;
+  margin-left: -10px;
+ 
+}
+footer .install img
+{
+   margin: 10px 0 15px 20;
+ 
+}
+footer .follow i:hover
+footer a:hover
+{
+  color:#088178;
+}
+footer .col1 {
+   margin-bottom: 10px;
+}

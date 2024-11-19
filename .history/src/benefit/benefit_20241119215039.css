@@ -1,0 +1,88 @@
+#featured {
+    display: flex;              
+     /* Tạo container flexbox để sắp xếp các phần tử con */
+    align-items: center;         
+    /* Căn giữa các phần tử con theo chiều dọc (trục y) */
+    justify-content: space-between; 
+    /* Phân phối các phần tử con cách đều nhau theo chiều ngang (trục x) */
+    flex-wrap: wrap;              
+    /* Cho phép các phần tử con xuống dòng khi không đủ không gian */
+ }
+ 
+ #featured .fe-box {
+    width: 140px;                 
+    /* Đặt chiều rộng cho mỗi hộp là 120px */
+    text-align: center;           
+    /* Căn giữa nội dung văn bản trong mỗi hộp */
+     padding:   10px 15px;           
+     /* Khoảng đệm bên trong mỗi hộp (15px trên dưới, 10px trái phải) */
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03); 
+     /* Tạo bóng cho hộp với độ mờ nhẹ */
+    border: 1px solid #cce7d0;    
+    /* Tạo viền màu xanh nhạt cho mỗi hộp */
+    border-radius: 5px;           
+    /* Bo tròn góc của hộp với bán kính 4px */
+     margin: 10px;                  
+    /* Tạo khoảng cách ngoài cho mỗi hộp là 15px */
+    margin-left:25px;
+    margin-top: 40px;
+    margin-right: 25px;
+  
+ }
+
+ #featured .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1); 
+    /* Tăng bóng khi di chuột qua hộp */
+ }
+ 
+ #featured .fe-box img {
+    width: 100%;                  
+    /* Đặt chiều rộng ảnh bằng 100% của hộp chứa */
+    margin-bottom: 10px;          
+    /* Khoảng cách dưới của ảnh là 10px */
+    padding: 5px 5px;
+ }
+ 
+ #featured .fe-box h6 {
+   display: inline-block;       
+     /* Hiển thị tiêu đề h6 dưới dạng khối nội tuyến */
+   padding: 12px 8px 6px 8px;     
+    /* Khoảng đệm bên trong tiêu đề h6 (trên 9px, phải 8px, dưới 6px, trái 8px) */
+   line-height: 1;               
+    /* Chiều cao dòng là 1 */
+   border-radius: 4px;            
+   /* Bo tròn góc của tiêu đề với bán kính 4px */
+   color: #088178;              
+     /* Màu chữ xanh lá cây */
+   background-color: #fddde4;    
+    /* Nền màu hồng nhạt cho tiêu đề */
+    margin-top: 0px;
+    
+ }
+ 
+ #featured .fe-box:nth-child(2) h6 {
+   background-color: #cdebbc;     
+   /* Nền màu xanh nhạt cho hộp thứ hai */
+ }
+ 
+ #featured .fe-box:nth-child(3) h6 {
+   background-color: #d1e8f2;    
+    /* Nền màu xanh nhạt cho hộp thứ ba */
+ }
+ 
+ #featured .fe-box:nth-child(4) h6 {
+   background-color: #cdd4f8;     
+   /* Nền màu xanh dương nhạt cho hộp thứ tư */
+ }
+ 
+ #featured .fe-box:nth-child(5) h6 {
+   background-color: #f6dbf6;    
+    /* Nền màu tím nhạt cho hộp thứ năm */
+ }
+ 
+ #featured .fe-box:nth-child(6) h6 {
+   background-color: #fff2e5;     
+   /* Nền màu cam nhạt cho hộp thứ sáu */
+   
+ }
+

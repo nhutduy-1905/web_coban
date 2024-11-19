@@ -1,0 +1,95 @@
+#product1
+{
+   text-align: center; /* Căn giữa tất cả nội dung văn bản bên trong phần tử #product1 */
+}
+
+#product1 .pro-container
+{
+   display: flex; /* Sử dụng flexbox để bố trí các phần tử con */
+   justify-content: space-between; /* Căn đều các phần tử con với khoảng cách đều nhau */
+   padding-top: 20px; /* Tạo khoảng cách trên cùng cho phần tử */
+   flex-wrap: wrap; /* Cho phép các phần tử con xuống hàng khi không đủ chỗ */
+}
+
+#product1 .pro
+{
+    width: 5%; /* Đặt chiều rộng của mỗi sản phẩm là 5% của khối chứa */
+    min-width: 300px; /* Đảm bảo mỗi sản phẩm có chiều rộng tối thiểu là 250px */
+    padding: 10px 5px; /* Tạo khoảng cách giữa nội dung bên trong phần tử và viền */
+    border: 1px solid #cce7d0; /* Tạo viền mỏng màu #cce7d0 */
+    border-radius: 25px; /* Làm tròn góc các viền với bán kính 25px */
+    cursor: pointer; /* Thay đổi con trỏ thành hình tay khi di chuột lên */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); /* Tạo hiệu ứng đổ bóng nhạt cho phần tử */
+    margin: 15px 0; /* Tạo khoảng cách trên và dưới của phần tử */
+    transition: 0.2 ease; /* Tạo hiệu ứng chuyển động mượt khi có sự thay đổi */
+    position: relative; /* Đặt phần tử ở vị trí tương đối để các phần tử con có thể định vị dựa vào nó */
+}
+
+#product1 .pro:hover 
+{
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06); /* Tăng cường đổ bóng khi người dùng hover chuột lên sản phẩm */
+}
+
+#product1 .pro img
+{
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng của phần tử chứa */
+    border-radius: 20px; /* Làm tròn góc các hình ảnh */
+    margin-bottom: -10px;
+}
+
+#product1 .pro .des
+{
+   text-align: start; /* Căn trái văn bản trong mô tả */
+   padding: 10px 0; /* Tạo khoảng cách trên và dưới cho phần mô tả */
+}
+
+#product1 .pro .des span
+{
+   color: #606063; /* Đặt màu chữ cho thẻ <span> */
+   font-size: 12px; /* Đặt kích thước chữ là 12px */
+}
+
+#product1 .pro .des h5
+{
+   padding-top: 7px; /* Tạo khoảng cách trên cho tiêu đề h5 */
+   color: #1a1a1a; /* Đặt màu chữ tối cho tiêu đề h5 */
+   font-size: 14px; /* Đặt kích thước chữ là 14px */
+   margin-top: -5px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+}
+
+#product1 .pro .des i
+{
+    font-size: 12px; /* Đặt kích thước chữ cho các biểu tượng sao */
+    color: rgb(243, 181, 25); /* Màu vàng cho các biểu tượng sao */
+}
+
+#product1 .pro .des h4
+{
+   padding-top: 7px; /* Tạo khoảng cách trên cho thẻ h4 */
+   font-size: 15px; /* Đặt kích thước chữ là 15px */
+   font-weight: 700; /* Đặt độ đậm của chữ là 700 (bold) */
+   color:#088178; /* Đặt màu xanh lá cho giá sản phẩm */
+   margin-top: 0px;
+}
+
+#product1 .pro .cart
+{
+  width: 40px; /* Đặt chiều rộng của biểu tượng giỏ hàng */
+  height: 40px; /* Đặt chiều cao của biểu tượng giỏ hàng */
+  line-height: 40px; /* Canh giữa biểu tượng giỏ hàng theo chiều dọc */
+  border-radius: 50px; /* Làm tròn biểu tượng giỏ hàng thành hình tròn */
+  background-color: #e8f6ea; /* Đặt màu nền xanh nhạt cho giỏ hàng */
+  font-weight: 500; /* Đặt độ đậm của chữ trong giỏ hàng là 500 */
+  color:#088178; /* Màu chữ xanh lá cho biểu tượng giỏ hàng */
+  border: 1px solid #cce7d0; /* Tạo viền mỏng màu xanh nhạt cho giỏ hàng */
+  position: absolute; /* Đặt biểu tượng giỏ hàng ở vị trí tuyệt đối trong phần tử cha */
+  bottom:20px; /* Đặt biểu tượng cách đáy 20px */
+  right: 10px; /* Đặt biểu tượng cách phải 10px */
+  margin-bottom:-10px;
+}
+h2
+{
+   margin-bottom: 10px;
+}
